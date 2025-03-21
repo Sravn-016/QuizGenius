@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login Page - QUIZGPT</title>
+    <script>
+        // JavaScript function to handle login form submission
+        function handleLogin(event) {
+            event.preventDefault();  // Prevent form from submitting in the traditional way
+            // Redirect to the Quizinterface.html page
+            window.location.href = "Quizinterface.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1>QUIZGPT</h1>
+            <h4>Gain More Knowledge</h4>
+            <!-- Attach the form with the JavaScript function -->
+            <form onsubmit="handleLogin(event)">
+                <div class="content">
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" class="input-field" placeholder="Enter username" required>
+                </div>
+
+                <div class="content">
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" class="input-field" placeholder="Enter password" required>
+                </div>
+
+                <button type="submit" class="btn-login">Log in</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
